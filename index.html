@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/logo-alura.svg">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador de Texto</title>
+</head>
+
+<body>
+    <div class="conteudo">
+            <div class="conteudo-header">
+                <header>
+                    <img id="logo" class="logo-alura"="on" src="img/logo-alura.svg" alt="Logo da Alura">                
+                </header>
+
+                <section class="conteudo-message">
+                    <label hidden for="msgTextarea">Digite seu texto aqui</label>
+                    <textarea id="msgTextarea" class="msgTextarea" name="msgTextarea" rows="3" cols="3" placeholder="Digite seu texto"></textarea>
+                    
+                    <div class="btn-sessao">
+                        <div class="btn-alerta">
+                            <img src="img/exclamation-circle.svg" alt="">
+                            <span>Apenas letras minúsculas e sem acento.</span>
+                        </div>
+                        <div class="btn-encript-decript">
+                            <button onclick="botaoEncriptar()" id="btnEncript" class="btn dark-blue">Criptografar</button>
+                            <button onclick="botaoDesencriptar()" id="btnDecript" class="btn light-gray">Descriptografar</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section id="result" class="conteudo-resultado">
+                <div id="msgResult" class="msg-nao-encontrada fade-in">
+                    <img id="msg-NaoEncontrada" src="img/no-message-found-blue.svg" alt="Nenhuma mensagem encontrada.">
+                    <h3 class="mensagem"></h3>
+                    <textarea class="mgs-resultado" id="mgs-resultado" cols="30" rows="10" placeholder="Digite um texto que você deseja criptografar ou descriptografar."></textarea>
+                </div>
+                <div id="copy" class="btn-copiar"></div>
+            </section>
+        </div>
+
+        <footer>
+            <ul>
+                <li>
+                    <a href="https://github.com/davidbrennerm" target="_blank"><img src="img/github-icon.svg" alt="Logo do GitHub"> GitHub</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/david-martins-726b311b5/" target="_blank"><img src="img/linkedin-icon.svg" alt="Logo do LinkedIn"> LinkedIn</a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
